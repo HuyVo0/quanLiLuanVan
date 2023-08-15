@@ -1,0 +1,223 @@
+/* side-bar__options =========================================== */
+  
+.side-bar__options {
+    /* text-align: center; */
+    font-size: 2rem;
+    margin: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.side-bar__option-list {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    /* align-items: center; */
+}
+
+  .side-bar__option-item {
+  font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+   overflow: hidden;
+   min-height: 4.5rem ;
+   background-color:  rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+}
+.side-bar__option-item:hover {
+    background-color:  rgba(255, 255, 255,0.2);
+    color: var(--text-color)
+}
+
+.side-bar__option-item .search-box-text {
+  color: var(--text-color)
+}
+
+
+
+.side-bar__option-item .search-box-i {
+  background: var(--text-color);
+}
+.side-bar__option-item:hover .search-box-i {
+  background: var(--text-color);
+}
+
+
+
+
+
+
+.search-box-title {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+
+
+/* form groud */
+.form {
+    padding: 32px 24px 0;
+    text-align: center;
+    align-self: center;
+    /* animation: fadeIn 0.2s ease; */
+  }
+  
+  .height-increase{
+    animation: scale 0.3s ease;
+
+  }
+  @keyframes scale{
+    from {
+      opacity: 0;
+      height: 0;
+    }
+    to{
+      opacity: 1;
+      height: 42.4rem;
+    }
+  }
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  .form-label,
+  .form-message {
+    text-align: left;
+  }
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+  /* #1dbfaf   #1ac7b6 */
+  .form-submit {
+    outline: none;
+    background-color: #1dbfaf;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+    .form-submit:hover {
+    background-color: #1ac7b6;
+  }
+  .form-close{
+    margin-top: 6px;
+    color: var(--seclect-color);
+    border-radius: 8px;
+    padding: 8px 0;
+  }
+  .form-close:hover{
+    background-color: var(--text-color);
+    color: black;
+  }
+  .side-bar__option-item:hover .form-label{
+    color: var(--text-color);
+  }
+  .side-bar__option-close{
+    text-align: center;
+    margin-top: 6px;
+    color: var(--seclect-color);
+    border-radius: 8px;
+    padding: 8px 0;
+    width: 18.8rem;
+  }
+  .side-bar__option-close:hover{
+    background-color: var(--text-color);
+    color: black;
+  }
+
+/* //////////////////////////////////////////////////// */
+
+  .project-search-box {
+    margin-top: 2rem;
+    position: relative;
+    width: 188px;
+  }
+  
+  .project-search-box input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+  }
+  
+  
+  .project-search-box span {
+    position: absolute;
+    left: 26px;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: black;
+    transition: 0.5s;
+    
+    
+  }
+  
+  .project-search-box input:valid ~span,
+  .project-search-box input:focus ~span {
+
+    transform: translateX(-28px) translateY(-34px);
+    font-size: 0.75em;
+  }
+  
+  .project-search-box i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--background-color);
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+  }
+  
+  .project-search-box input:valid ~i,
+  .project-search-box input:focus ~i {
+    height: 44px;
+    border-color: black;
+  }
+  

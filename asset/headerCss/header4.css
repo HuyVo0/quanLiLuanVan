@@ -1,0 +1,41 @@
+.header2-navbar{
+    top:0;
+}
+.fake-div{
+    display: none;
+}
+.mobiile-more-icon {
+    display: none;
+}
+.side-bar-mobile{
+    display: none;
+}
+.second-header-mobile,
+.second-header{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 66px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5)    ;
+}
+.second-header-mobile li,
+.second-header li{
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+.second-header-mobile li:last-child,
+.second-header li:last-child{
+    border-right:none;
+}
+.second-header-mobile li a,
+.second-header li a{
+    display: block;
+    padding: 16px 24px;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    color: inherit;
+    
+}
+
+

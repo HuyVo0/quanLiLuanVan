@@ -1,0 +1,221 @@
+.main-4{
+    width: 100%;
+    margin-top: 15rem;
+}
+
+.main-4-right{
+    width: 64%;
+}
+.main-4-left{
+    width: 34%;
+}
+.essay-content{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.essay-header{
+    width: 100%;
+    padding-bottom:2rem ;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ccc;
+}
+.essay-header h1{
+    color: var(--background-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.author-infor{
+    border-bottom: 1px solid #ccc;
+}
+.author-MSSV,
+.author-name{
+    display: inline-block;
+    padding: 2rem 2rem 2rem 0;
+    font-size: 1.4rem;
+
+}
+.essay-desc{
+  
+    padding: 2rem 0;
+    font-size: 1.3rem;
+    word-spacing: 0.2rem;
+}
+
+
+.essay-infor{
+    width: 100%;
+    padding: 2rem 0 0;
+}
+.essay-infor ul{
+    width: 100%;
+}
+.essay-infor ul li{
+    width: 20%;
+    text-align: center;
+    font-size: 1.4rem;
+    padding: 2rem 0;
+
+}
+.essay-infor ul li:last-child{
+    background-color: var(--background-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.essay-infor ul li:last-child:hover{
+    background-color: #1dbfaf;
+}
+
+.search-support-block{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+.search-support-header{
+    background-color: #152033;
+    color: var(--text-color);
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.search-support-noti {
+    padding: 2rem;
+    border-bottom: 1px solid rgba(204, 204, 204,0.5);
+}
+.search-support-noti h3{
+    padding-bottom: 6px;
+}
+.search-support-noti h3,
+.search-support-noti i{
+    display: inline-block;
+    font-size: 1.5rem;
+}
+.search-support-noti span{
+    display: block;
+    font-size: 1.5rem;
+    
+}
+.search-support-noti p{
+    font-size: 1.5rem;
+    padding-bottom:6px ;
+    text-indent: 30px;
+
+}
+.search-support-noti div{
+    max-width: 100%;
+    
+    padding: 1.5rem 0;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    border-radius: 4px;
+    background-color: #1dbfaf ;
+    transition: all 0.3s;
+}
+.search-support-noti div:hover{
+    background-color: rgba(29, 191, 175,0.8) ;
+}
+.search-support-noti-wrapper{
+    padding: 0 2rem;
+}
+
+.related-essay-block{
+    width: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 4rem;
+}
+.related-essay-header{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding:  2rem ;
+    border-bottom: 1px solid #ccc;
+}
+.related-essay-list{
+    width: 100%;
+}
+.related-essay-item{
+    width: 100%;
+    padding: 2rem 2rem 4rem 2rem;
+}
+.related-essay-icon {
+    width: 30%;
+}
+.related-essay-icon img{
+    width: 80%;
+}
+.related-essay-title{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.related-essay-title h2{
+    font-weight: 500;
+    color: var(--background-color);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.related-essay-desc{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+.related-essay-desc p{
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.related-essay-infor{
+    width: 100%;
+}
+.related-essay-infor ul{
+    width:100%;
+    
+}
+.related-essay-infor ul li{
+    font-size: 1.4rem;
+    text-align: center;
+}
+.related-topic-block{
+    width: 100%;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+.related-topic-heder{
+    background-color: #152033;
+    color: var(--text-color);
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.related-topic-list-wrapper{
+    padding: 0 2rem;
+}
+.related-topic-list-wrapper ul{
+    width: 100%;
+}
+.related-topic-list-wrapper ul li{
+    padding: 2rem 0;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    transition: all 0.2s;
+}
+.related-topic-list-wrapper ul li:last-child{
+    border: none;
+}
+.related-topic-list-wrapper ul li:hover{
+    color: var(--background-color);
+}
+

@@ -1,0 +1,298 @@
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #0e4166;
+  background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+  z-index: -1;
+}
+
+
+
+
+
+
+.content-wrapper{
+  position: relative;
+  margin: 0;
+  padding-bottom: 64px;
+}
+
+.b{
+  padding-top: 16px;
+}
+/* info-bar */
+.graduation-essays{
+  color: #fff;
+
+}
+
+.graduation-essay-item-wrapper{
+  background-color: rgba(255, 255, 255, 0.06);
+}
+.graduation-essays-list{
+    max-height: 56rem;
+    
+    overflow-y: scroll;
+}
+.graduation-essays-list::-webkit-scrollbar {
+    width: 5px;
+}
+.graduation-essays-list::-webkit-scrollbar-thumb  {
+    width: 5px;
+    border-radius: 3px;
+    background-color: #ccc;
+}
+.graduation-essays-list::-webkit-scrollbar-thumb:hover {
+    background-color: var(--background-color);
+}
+
+.info-bar{
+    display: flex;
+    align-items: center;
+    background-color: #051923;
+    border-radius: 6px;
+    transition: all 0.3s linear;
+}
+.avatar{
+    width: 50px
+}
+.code{
+    margin-left: 2rem;
+}
+.author{
+    margin-left: 11rem;
+}
+.project{
+    margin-left: 25rem;
+}
+.project, .author,.code{
+    padding: 24px 0;
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+
+.graduation-essay-item{
+    padding: 16px 8px;
+    border-radius: 4px;
+    border-bottom: 1px solid var(--seclect-color);
+    transition: all 0.3s;
+}
+.graduation-essay-item:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.essay-item-img .img{
+    background-image: url(../img/luanVanimg.jpg);
+    width: 50px;
+    padding-top: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.student-code>span ,
+.author-name>h3,
+.project-name>p{
+    
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 6px 24px;
+}
+
+.avatar{
+    width: 80px
+}
+.student-code{
+    min-width: 150px;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.author-name{
+    min-width: 260px;
+    max-width: 260px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.project-name{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: 5rem ;
+}
+
+.graduation-essay-item__option{
+    margin-left: auto;
+    margin-right: 3rem;
+    justify-content: space-between;
+    width: 5rem;
+}
+.graduation-essay-item-icon {
+    
+    padding: 8px;
+    margin: 0 4px;
+    border-radius: 4px;
+}
+.graduation-essay-item-icon:hover {
+    background-color: #051923;
+    color: var(--text-color);
+
+}
+
+.graduation-essay-item-option-icon {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.formm {
+    padding: 32px 80px 0;
+    text-align: center;
+    align-self: center;
+   
+  }
+  .formm .form-close:hover {
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  .formm .form-close{
+    width: 30%;
+    margin: 8px auto;
+    padding: 10px 0;
+    color: black;
+  }
+  .formm .form-close>i{
+    font-weight: 800;
+    font-size: 1.4rem;
+  }
+  .formm .form-submit{
+    background-color: var(--seclect-color);
+  }
+
+
+  .comfirm-model-wrapper{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+  }
+  .confirm-model {
+    padding: 2rem;
+    width: 50rem;
+    height: 20rem;
+    background-color: #fff;
+    margin: 19rem auto;
+    border-radius: 4px;
+  }
+  .comfirm-message {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.6rem;
+
+  }
+  .confirm-btn{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+  }
+  .comfirm-model-btn{
+   width: 40%;
+   height: 50px;
+    position: relative;
+    text-align: center;
+    padding: 1rem 2rem;
+    /* background-color: var(--background-color); */
+    border-radius: 4px;
+    font-size: 1.5rem;
+    overflow: hidden;
+
+  }
+  .comfirm-model-btn::after {
+    content: "Xác Nhận";
+    position: absolute;
+    width: 70%;
+    top: 130%;
+    right: 0;
+    bottom: 0;
+    line-height:50px ;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #1dbfaf;
+    border-radius: 4px;
+    transition: all 0.5s;
+    color: var(--text-color);
+  }
+  
+  .comfirm-model-btn:last-child::after {
+    content: "Hủy";
+    position: absolute;
+    width: 70%;
+    top: 130%;
+    right: 0;
+    bottom: 0;
+    line-height:50px ;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: red;
+    border-radius: 4px;
+    transition: all 0.5s;
+    color: var(--text-color);
+  }
+
+  .comfirm-model-btn i{
+    position: absolute;
+    transform: translateX(50%) ;
+    right: 50%;
+    font-size: 3rem;
+    margin-right: 4px;
+    animation: hover-reverse 0.5s  forwards;
+  }
+
+  .comfirm-model-btn:hover::after{
+    top: 0;
+    /* left: 0; */
+  }  
+  .comfirm-model-btn:hover i{
+    color: #1dbfaf;
+    animation: hover 0.5s  forwards;
+  }
+  .comfirm-model-btn:last-child:hover i{
+    color: red;
+    animation: hover 0.5s  forwards;
+  }
+
+
+  
+  @keyframes hover {
+    from {
+        color: var(--seclect-color);
+        transform: scale(1)  ;
+        right: 50%;
+        
+    }
+    to {
+        
+        transform:  scale(1.6) rotate(360deg);
+        right: 76%;
+        
+    }
+  }
+  @keyframes hover-reverse {
+    from {
+      transform:  scale(1.6) ;
+      right: 76%;
+    }
+    to {
+      transform: rotate(360deg) translateX(50%)   scale(1);
+      right: 50%;
+    }
+  }

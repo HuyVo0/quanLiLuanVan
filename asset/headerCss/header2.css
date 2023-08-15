@@ -1,0 +1,198 @@
+.header2-navbar {
+    position: fixed;
+    top: -65px;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: #001d3d;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    
+}
+.header2-navbar__fa-house-icon {
+    color: #fff;
+    font-size: 3rem;
+    position: absolute;
+    left: -39px;
+  
+}
+.header2-navbar__search-box{
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    
+    
+}
+.header2-navbar__search{
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 50rem;
+}
+.header2-navbar__search-btn{
+    background-color: #fff;
+    border: none;
+    padding: 6px;
+}
+.header2-navbar__option-btn{
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 8px 16px;
+}
+.header2-navbar__more-btn{
+    padding: 8px 16px;
+    border-radius: 8px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 2rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+.header2-navbar__more-btn:hover {
+    background-color:rgb(17, 84, 184);
+}
+
+
+.header-background{
+    position: relative;
+    background-image: url(../img/gradient-dark-blue-futuristic-digital-background.jpg);
+    background-repeat:no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-bottom: 8rem;
+    z-index: 1;
+   
+}
+.header-background::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+   bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -99;
+    transition: all 0.3s ease;
+}
+
+.header2-top{
+    justify-content: space-between;
+    padding-bottom: 4rem;
+}
+.header2-navbar__logo>img{
+    width:8rem;
+    filter: drop-shadow(0.09rem 0.09rem 1px #fff);
+}
+
+.header2-logo>img {
+    width:15rem;
+    filter: drop-shadow(0.09rem 0.09rem 1px #fff);
+}
+.header2-nav__list{
+    list-style: none;
+    padding-bottom: 4rem;
+    border-bottom: 2px solid var(--text-color);
+}
+.header2-nav__item {
+    padding: 0.8rem 1.6rem;
+}
+.header2-nav__item>a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
+}
+.header2-title {
+    text-align: center;
+}
+
+
+
+.header2-search-box{
+    position: relative;
+    /* background-color: var(--background-color); */
+    border-radius: 10px;
+    width: 60rem;
+    height: 100px;
+}
+
+.header2-search{
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 1.6rem 1rem 1.6rem 1rem;
+    width: 100px;
+    height: 50px;
+    border-radius: 8px ;
+   z-index: 2;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+    transition: all 0.5s ease-in-out;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    /* background-color: red; */
+}
+.header2-search::placeholder{
+    color: transparent;
+}
+.header2-title>h1{
+    line-height: 13rem;
+    font-size: 6rem;
+    color: var(--text-color);
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.header2-title>h3{
+    color: var(--text-color);
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.header2-search-btn {
+    position: absolute;
+    left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+   width: 100px;
+   height: 48px;
+    background-color: #4cc9f0;
+    padding: 3px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    border: none;
+    z-index: 1;
+    
+}
+
+
+
+.header2-search-btn > i{
+    color: var(--text-color);
+   font-size: 1.6rem;
+}
+/* .header2-search-btn:focus ~ .header2-search, */
+.header2-search:valid,
+.header2-search:focus{
+    left: 60%;
+    width: 82%;
+    background-color: rgba(225, 225, 225, 0.5);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-shadow: 0px 3px 2px  rgba(51, 99, 202, 1);
+}
+.header2-search:valid ~ .header2-search-btn,
+.header2-search:focus ~ .header2-search-btn {
+    
+    width: 15%;
+    left: 10%;
+    border-radius: 8px;
+    background-color: #7d9dc4;
+    box-shadow: 0px 3px 2px  rgba(51, 99, 202, 1);
+}
