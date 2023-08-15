@@ -1,0 +1,98 @@
+[
+    {
+        "name":" Lưu Gia Huy",
+        "MSSV": "1951012038",
+        "easayName":"XÂY DỰNG HỆ THỐNG QUẢN LÝ NHÀ HÀNG TIỆC CƯỚI DỰA TRÊN SPRING BOOT VÀ REACT NATIVE",
+        "dateAdded": "03/07/2023",
+        "downloadNumbers": 6,
+        "viewNumbers": 12
+    },
+    {
+        "name":" Vũ Trung Kiên",
+        "MSSV": "1951012060",
+        "easayName":"XÂY DỰNG HỆ THỐNG TẠP CHÍ KHOA HỌC",
+        "dateAdded": "03/07/2023",
+        "downloadNumbers": 8,
+        "viewNumbers": 46
+    },
+    {
+        "name":"Nguyễn Nhật Tiến",
+        "MSSV": "1951012060",
+        "easayName":"XÂY DỰNG HỆ THỐNG TẠP CHÍ KHOA HỌC",
+        "dateAdded": "03/07/2023",
+        "downloadNumbers": 4,
+        "viewNumbers": 48
+    },
+    {
+        "name":"Nguyễn Văn Thu",
+        "MSSV": "1951050080",
+        "easayName":"PHÁT TRIỂN HỆ THỐNG SÀN GIAO DỊCH THƯƠNG MẠI ĐIỆN TỬ OPEN MARKET",
+        "dateAdded": "04/07/2023",
+        "downloadNumbers": 9,
+        "viewNumbers": 23
+    },
+    {
+        "name":"Nguyễn Trường An",
+        "MSSV": "1951050080",
+        "easayName":"PHÁT TRIỂN GAME TANK WAR MULTIPLAYER DỰA TRÊN UNITY VÀ PHOTON FUSION",
+        "dateAdded": "05/07/2023",
+        "downloadNumbers": 6,
+        "viewNumbers": 13
+    },
+    {
+        "name":"Cao Thiên Tân",
+        "MSSV": "1951012114",
+        "easayName":"NHẬN DẠNG VÀ ĐẾM PHƯƠNG TIỆN LỚN LƯU THÔNG TRÊN ĐƯỜNG THÔNG QUA VIDEO",
+        "dateAdded": "05/07/2023",
+        "downloadNumbers": 23,
+        "viewNumbers": 65
+    },
+    {
+        "name":"Trần Thị Thuý Hiền",
+        "MSSV": "1951012024",
+        "easayName":"WEBSITE THƯƠNG MẠI ĐIỆN TỬ ECOMMERCE",
+        "dateAdded": "06/07/2023",
+        "downloadNumbers": 9,
+        "viewNumbers": 12
+    },
+    {
+        "name":"Phạm Nhật Khoa",
+        "MSSV": "1951012053",
+        "easayName":"XÂY DỰNG WEBSITE THI TRẮC NGHIỆM ONLINE BẰNG REACTJS VÀ .NET CORE API",
+        "dateAdded": "06/07/2023",
+        "downloadNumbers": 10,
+        "viewNumbers": 45
+    },
+    {
+        "name":"Nguyễn Đức Đức",
+        "MSSV": "1951052043",
+        "easayName":"PHÁT TRIỂN HỆ THỐNG CHỢ TRỰC TUYẾN",
+        "dateAdded": "07/07/2023",
+        "downloadNumbers": 7,
+        "viewNumbers": 13
+    },
+    {
+        "name":"Nguyễn Trung Kiên",
+        "MSSV": "1951052091",
+        "easayName":"PHÁT TRIỂN HỆ THỐNG QUẢN LÝ CHUNG CƯ DỰA TRÊN KIẾN TRÚC MICROSERVICES",
+        "dateAdded": "05/08/2023",
+        "downloadNumbers": 6,
+        "viewNumbers": 12
+    },
+    {
+        "name":"Lê Bảo Thịnh",
+        "MSSV": "1954032326",
+        "easayName":"PHÁT TRIỂN HỆ THỐNG QUẢN LÝ DU LỊCH SỬ DỤNG PYTHON DJANGO VÀ REACTJS",
+        "dateAdded": "05/08/2023",
+        "downloadNumbers": 4,
+        "viewNumbers": 48
+    },
+    {
+        "name":"Võ Minh Hùng",
+        "MSSV": "1951052083",
+        "easayName":"PHÁT TRIỂN HỆ THỐNG QUẢN LÝ PHÒNG MẠCH TƯ OUPHARMACY",
+        "dateAdded": "06/08/2023",
+        "downloadNumbers": 7  ,
+        "viewNumbers": 13
+    }
+]

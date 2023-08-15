@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="./asset/font/themify-icons-font/themify-icons/themify-icons.css"> 
+    <link rel="stylesheet" href="./asset/headerCss/header.css">
+    <link rel="stylesheet" href="./asset/sideBarCss/sidebar.css">
+    <link rel="stylesheet" href="./asset/mainContentCss/content.css">
+    <link rel="stylesheet" href="./asset/footerCSS/footer.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/responsive/index2Responsive.css">
+    
+    <title>Quản lí luận văn</title>
+</head>
+<body>
+    
+
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="row">
+            <div class="header__logo">
+                <img src="./asset/img/Logo (1).png" alt="" class="header__logo-img">
+            </div>
+            <div class="header__nav-bar flex">
+
+                <ul class="flex">
+                    <li><a href="">Liên Hệ</a></li>
+                    <li><a href="">Cựu Sinh Viên</a></li>
+                </ul>
+                  
+                <div class="header__nav-bar-noti">
+                    
+                    <i class="ti-bell header__nav-bar-noti-icon" ></i>
+                    <div class="header__nav-bar-noti-bar">   
+                    </div>
+                </div>
+                <div class="header__nav-bar-search">
+                    <i class="ti-search header__nav-bar-search-icon"></i>
+                    <input type="text" placeholder="tìm kiếm" class="search-input">
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- NAV-BAR -->
+    <nav class="nav-bar">
+        <div class="row center a">
+            <!-- mobile -->
+            <div class="mobile-navbar flex space-between">
+                <div class="mobile-nav-bar-icon">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <div class="mobile-nav-bar-icon mobile-nav-bar-icon-fa-bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            <ul class="nav__list hidden">
+                <li class="nav__list-item">
+                    <a href="">Trang Chủ</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="">Khoa-Ban</a>
+                    <ul class="nav__sup-nap">
+                        <li class="nav__sup-nap-item"><a href="">Công nghệ thông tin</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Luật</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Quản trị kinh doanh</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="">Tin Tức</a>
+                    <ul class="nav__sup-nap">
+                        <li class="nav__sup-nap-item"><a href="">Công nghệ thông tin</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Luật</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Quản trị kinh doanh</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="">Tuyển Sinh</a>
+                    <ul class="nav__sup-nap">
+                        <li class="nav__sup-nap-item"><a href="">Đào tạo</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Đào tạo từ xa</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Sau đại học</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Đào tạo trực tuyến</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="">Đào Tạo</a>
+                    <ul class="nav__sup-nap">
+                        <li class="nav__sup-nap-item"><a href="">Đại học</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Đào tạo từ xa</a></li>
+                        <li class="nav__sup-nap-item"><a href="">Đào tạo sau đại học</a></li>
+                    </ul>
+                </li>
+                <li class="nav__list-item"><a href="">Nghiên Cứu</a></li>
+                <li class="nav__list-item"><a href="">Phòng-Cơ Sở</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- MAIN - CONTENT -->
+    <main class="content-wrapper f ">
+
+
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+    <defs>
+        <linearGradient id="bg">
+            <stop offset="0%" style="stop-color:rgba(32, 41, 69, 0.06)"></stop>
+            <stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+            <stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+        </linearGradient>
+        <path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+    </defs>
+    <g>
+        <use xlink:href='#wave' opacity=".3">
+            <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="10s"
+      calcMode="spline"
+      values="270 230; -334 180; 270 230"
+      keyTimes="0; .5; 1"
+      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+      repeatCount="indefinite" />
+        </use>
+        <use xlink:href='#wave' opacity=".6">
+            <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="8s"
+      calcMode="spline"
+      values="-270 230;243 220;-270 230"
+      keyTimes="0; .6; 1"
+      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+      repeatCount="indefinite" />
+        </use>
+        <use xlink:href='#wave' opacty=".9">
+            <animateTransform
+      attributeName="transform"
+      attributeType="XML"
+      type="translate"
+      dur="6s"
+      calcMode="spline"
+      values="0 230;-140 200;0 230"
+      keyTimes="0; .4; 1"
+      keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+      repeatCount="indefinite" />
+        </use>
+    </g>
+</svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row b">
+            <div class="open-side-bar">
+                <i class="fa-solid fa-caret-right"></i>
+            </div>
+            <div class="side-bar col-20 animate__animated animate__fadeInLeft">
+                <div class="side-bar__options">
+                    <i class="ti-menu"></i>
+                    Danh mục
+                </div>
+               
+                <div class="side-bar__option">
+                    <ul class="side-bar__option-list">
+                        <li class="side-bar__option-item ">
+                            Tìm Kiếm
+                            <div class="sup-side-bar__option-item close center-col">
+                                <!-- <div class="search-box-wrapper"> -->
+                                    <div class="project-search-box">
+                                        <input type="text" required name="easayName" class="project-search" id="essay-search-box">
+                                        <span class="search-box-text">Tên Luận Văn</span>
+                                        <i class="search-box-i"></i>
+                                    </div>
+                                    <div class="project-search-box">
+                                        <input type="text" required name="name" class="project-search" id="essay-search-box">
+                                        <span class="search-box-text">Tên Tác Giả</span>
+                                        <i class="search-box-i"></i>
+                                    </div>
+                                    <div class="project-search-box">
+                                        <input type="text" required name="MSSV" class="project-search" id="essay-search-box">
+                                        <span class="search-box-text">Mã Số Sinh Viên</span>
+                                        <i class="search-box-i"></i>
+                                    </div>
+                                <!-- </div> -->
+                                <div class="form-close side-bar__option-close">
+                                    <i class="ti-angle-up"></i>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-bar__option-item ">
+                            Thêm khóa học 
+                            <div class="sup-side-bar__option-item close">
+                                <form action="POST" class="form" id="form-1">
+                                    <div class="form-group">
+                                        <label for="fullname" class="form-label">Tên đầy đủ</label>
+                                        <input id="fullname" name="fullname" placeholder="Nguyễn Văn A" class="form-control" type="text">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="MSSV" class="form-label">Mã số sinh viên</label>
+                                        <input id="MSSV" name="MSSV" placeholder="2251052047" class="form-control" type="text">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="projectname" class="form-label">Tên luận văn</label>
+                                        <input id="projectname" name="projectname" placeholder="Tên project" class="form-control" type="text">
+                                        <span class="form-message"></span>
+                                    </div>
+                                    <button class="form-submit"> Thêm </button>
+                                    <div class="form-close">
+                                        <i class="ti-angle-up"></i>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="content col-80 animate__animated animate__fadeInUp">
+                <div class="graduation-essays">
+                    <div class="info-bar flex">
+                        <div class="avatar"></div>
+                        <div class="code">
+                            MSSV
+                        </div>
+                        <div class="author">
+                            Tên
+                        </div>
+                        <div class="project">
+                            Tên project
+                            
+                        </div>
+                    </div>
+                    <div class="graduation-essays-list">
+                        <div class="graduation-essay-item-wrapper">
+                            <div class="graduation-essay-item animate__animated animate__fadeInUp flex">
+                                <div class="essay-item-img">
+                                    <div class="img"></div>
+                                </div>
+                                <div class="student-code">
+                                    <span>2251052047</span>
+                                </div>
+                                <div class="author-name">
+                                    <h3>Võ Văn Huy </h3>
+                                </div>
+                                <div class="project-name">
+                                    <p>Quản lý Khóa Luận Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo expedita, animi earum vero optio, amet cumque rerum, a laudantium quia debitis tenetur illo provident. Magnam facere nobis non sint officiis!</p>
+                    
+                                </div>
+                                <div class="graduation-essay-item__option center-row">
+                                    <div class="graduation-essay-item-icon more-icon center-col">
+                                        <i class="ti-more graduation-essay-item-option-icon"></i>
+                                    </div>
+                                    <div class="graduation-essay-item-icon center-col">
+                                        <i class="ti-close graduation-essay-item-option-icon"></i>
+                                    </div>
+    
+                                </div>
+                               
+                            </div>
+                            <form action="POST" class="formm" id="form-2">
+                                <div class="form-group">
+                                    <label for="fullname" class="form-label">Tên đầy đủ</label>
+                                    <input id="fullname" name="fullname" placeholder="Nguyễn Văn A" class="form-control" type="text">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="MSSV" class="form-label">Mã số sinh viên</label>
+                                    <input id="MSSV" name="MSSV" placeholder="2251052047" class="form-control" type="text">
+                                    <span class="form-message"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="projectname" class="form-label">Tên luận văn</label>
+                                    <input id="projectname" name="projectname" placeholder="Tên project" class="form-control" type="text">
+                                    <span class="form-message"></span>
+                                </div>
+                                <button class="form-submit"> Thêm </button>
+                                <div class="form-close">
+                                    <i class="ti-angle-up"></i>
+                                </div>
+                            </form>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="comfirm-model-wrapper hide">
+        <div class="confirm-model center-col">
+            <div class="comfirm-message ">
+                <h1>Xác Nhận Xóa</h1>
+            </div>
+            <div  class="confirm-btn flex ">
+                <div value = "true" class="comfirm-model-btn flex space-between-center">
+                    <i class="fa-solid fa-square-check"></i>
+                   
+                </div>
+                <div value="false" class="comfirm-model-btn flex space-between-center">
+                    <i class="fa-solid fa-circle-xmark"></i>    
+                  
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- FOOTER -->
+
+    <footer class="footer1">
+        
+        <div class="footer-info margin-both-side">
+            <div class="row c">
+                    <div class="info col-3 center-col">
+                        <div class="info-wraper">
+                            <div class="info-title">Các liên kết khác</div>
+                        <ul class="info-list">
+                            <li class="info-text scale">Thư viện</li>
+                            <li class="info-text scale">Hệ thống thông tin sinh viên</li>
+                            <li class="info-text scale">Hệ thống tác nghiệp</li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="info col-3 center-col">
+                        <div class="info-wraper center-col">
+                            <div class="info-title">Kết nối</div>
+                    <ul class="info-list center-row ">
+                        <li class="info-item scale">
+                            <i class="ti-facebook info-social-icon"></i>
+                        </li>
+                        <li class="info-item scale">
+                            <i class="ti-youtube info-social-icon"></i>
+                        </li>
+                        <li class="info-item scale">
+                            <i class="ti-twitter info-social-icon"></i>
+                        </li>
+                        <li class="info-item scale">
+                            <i  class="ti-instagram info-social-icon"></i>
+                        </li>
+                        <li class="info-item scale">
+                            <i class="ti-linkedin info-social-icon"></i>
+                        
+                        </li>
+                    </ul> 
+                        
+                        </div>
+                    </div>
+                    <div class="info col-3 center-col">
+                        <div class="info-wraper">
+                            <div class="info-title">Các cơ sở </div>
+                       <ul class="info-list">
+                        <li class="info-item center-row scale">
+                            <div class="loca-icon-wrapper">
+                                <i class="ti-location-pin loca-icon"></i>
+                            </div>
+                            <a class="class-location" href="#"><span>Địa điểm 1:</span>97 Võ Văn Tần, P. Võ Thị Sáu, Q. 3, TP. HCM.</a>
+                        </li>
+                        <li class="info-item center-row scale">
+                            <div class="loca-icon-wrapper">
+                                <i class="ti-location-pin loca-icon"></i>
+                            </div>
+                            <a class="class-location" href="#"><span>Địa điểm 2:</span>35-37 Hồ Hảo Hớn, P. Cô Giang, Q. 1 , TP. HCM.</a>
+                        </li>
+                        <li class="info-item center-row scale">
+                            <div class="loca-icon-wrapper">
+                                <i class="ti-location-pin loca-icon"></i>
+                            </div>
+                            <a class="class-location" href="#"><span>Địa điểm 3:</span>371 Nguyễn Kiệm, P. 3, Q. Gò Vấp, TP. HCM.</a>
+                        </li>
+                        <li class="info-item center-row scale">
+                            <div class="loca-icon-wrapper">
+                                <i class="ti-location-pin loca-icon"></i>
+                            </div>
+                            <a class="class-location" href="#"><span>Địa điểm 4:</span>02 Mai Thị Lựu, P. Đa Kao, Q. 1, TP. HCM.</a>
+                        </li>
+                       </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+                    
+        </div>
+        
+    </footer>
+    <footer class="footer2 margin-both-side">
+        <div class="footer-contact">
+            <div class="row">
+                <div class="footer-logo col-20">
+                    <img src="./asset/img/Logo (1).png" alt="" class="header__logo-img">
+                </div>
+                <div class="footer-contact-info col-80 ">
+                    <p class="contact-info">Địa chỉ: 35 – 37 Hồ Hảo Hớn, Phường Cô Giang, Quận 1, TP. HCM.</p>
+                    <p class="contact-info">Điện thoại: <a href="#">028-38364748</a>.</p>
+                    <p class="contact-info">Fax: <a href="#">028-39207639</a> hoặc <a href="#">028-39207640</a>.</p>
+                    <p class="contact-info">E-mail: <a href="#">ou@ou.edu.vn</a>.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./jsFile/page2.js"></script>
+    <script>
+        let listEasay = localStorage.getItem("list-easay") ? JSON.parse(localStorage.getItem("list-easay")) : [];
+        // mở mục thêm side bar
+       
+
+       
+        let sideBarElements = document.querySelectorAll('.side-bar__option-item')
+
+        sideBarElements.forEach(function(sideBarElement) {          
+                sideBarElement.onclick = function(e) {
+
+
+                    let supptionElement = e.target.querySelector('.sup-side-bar__option-item');
+                    supptionElement.classList.remove('close');
+                    e.target.style.border = '1px solid var(--background-color)'; 
+                    if(e.target.querySelector('.sup-side-bar__option-item')) {
+                        var optionBoxHeight = e.target.querySelector('.sup-side-bar__option-item').offsetHeight;
+                        
+
+                        e.target.style.height = (optionBoxHeight + 100) + 'px';
+                    }
+                    else {
+                        var optionBoxHeight = e.target.querySelector('.form').offsetHeight;
+                        e.target.style.height = (optionBoxHeight + 45) + 'px';
+                    }
+
+                    let sideBarElementClose = e.target.querySelector('.form-close');
+                    sideBarElementClose.onclick = function() {
+                        e.target.style.border = 'none'; 
+                        e.target.style.borderBottom = '1px solid var(--seclect-color)';
+                        e.target.style.height = 4.5 + 'rem';
+                        supptionElement.classList.add('close');
+                    };
+                }           
+         });
+
+       
+
+         renderEasy(listEasay);
+
+        
+        // bấm nút thêm luận văn===========================================================================
+
+        let formElement = document.querySelector('#form-1');
+        let formBtn = formElement.querySelector('.form-submit');
+        formBtn.onclick = function(e) {
+            e.preventDefault();
+            addNew();
+            formElement.querySelector('#fullname').value = "";
+            formElement.querySelector('#MSSV').value= "";
+            formElement.querySelector('#projectname').value= "";
+            
+        };
+        // xửu lí mở chỉnh sữa luận văn
+
+
+       function eventHandler() {
+
+        // xử lí bấm vào nut option
+
+        let essayInfoElements = document.querySelectorAll('.graduation-essay-item');
+       
+        essayInfoElements.forEach(function(essayInfoElement){
+
+            let moreIconElement = essayInfoElement.querySelector('.more-icon');
+            moreIconElement.onclick = function() {
+                let _this = this;
+
+
+
+
+
+            // gắn sãn chữ cho những ô input
+                editEssay(essayInfoElement, parseInt(_this.dataset.index));
+
+                let formmElement = essayInfoElement.parentElement.querySelector('#form-2');
+                
+                if(formmElement.classList.contains('close')) {
+                   
+                        formmElement.classList.remove('close');
+                    
+
+                }
+                else {
+                    formmElement.classList.add('close');
+                }
+                let formmCloseElement = formmElement.querySelector('.form-close');
+
+                formmCloseElement.onclick = function() {
+                    formmElement.classList.add('close');
+                };
+
+        // xử lí nút update
+         
+                let updateBtn = formmElement.querySelector('.form-submit');
+
+                let inputElements = formmElement.querySelectorAll('.form-control');
+                let isOnchangeInput = false
+                inputElements.forEach(function(inputElement) {
+                    inputElement.oninput = function() {
+                        updateBtn.style.backgroundColor = '#1dbfaf';
+                        isOnchangeInput = true;
+                    };
+                });
+                 
+                updateBtn.onclick = function(e) {
+                    if(isOnchangeInput) {
+                        e.preventDefault();
+                        changeEssay(essayInfoElement, parseInt(_this.dataset.index));
+                        formmElement.classList.add('close');
+                        
+                        
+                    } else {
+                        e.preventDefault();
+                    }
+                };
+
+                
+            
+            }
+            // xử lí nút xóa
+                let deletemodel =  document.querySelector('.comfirm-model-wrapper');
+                let deleteBtn = essayInfoElement.querySelector('.close-icon');
+               
+                
+                deleteBtn.onclick = function() {
+                    deletemodel.classList.remove('hide');
+                    deletemodel.onclick = function(e) {
+                        
+                        if(e.target.getAttribute('value') === 'true') {
+                            deleteEssay(essayInfoElement.querySelector('.more-icon').dataset.index);
+                            deletemodel.classList.add('hide');
+                        }
+                        else if(e.target.getAttribute('value') === 'false') {
+                            deletemodel.classList.add('hide');
+                        }
+                        else if(e.target.classList.contains('comfirm-model-wrapper')) {
+                            deletemodel.classList.add('hide');
+                        }
+                    };
+                };
+            
+            // isConfirms.forEach(function(confirm){
+            //     if(confirm.getAttribute('value') == 'true') {
+            //         deleteEssay(essayInfoElement.querySelector('.more-icon').dataset.index);
+            //     }
+            //     else {
+            //         document.querySelector('.comfirm-model-wrapper').classList.remove('hide');
+            //     }
+            // });
+            
+
+
+         
+        });
+        // mở navbar mobile
+        let moblieMoreIcon = document.querySelector('.mobile-nav-bar-icon-fa-bars');
+        let navBarMobile = document.querySelector('.nav__list');
+        moblieMoreIcon.onclick = function() {
+            if(navBarMobile.classList.contains('.hidden')) {
+
+                navBarMobile.classList.remove('.hidden');
+                navBarMobile.style.display = 'flex';
+            }
+            else {
+                navBarMobile.classList.add('.hidden');
+                navBarMobile.style.display = 'none';
+            }
+        };
+        let openSideBar = document.querySelector('.open-side-bar');
+        let sideBar = document.querySelector('.side-bar');
+       
+        openSideBar.onclick = function() {
+            sideBar.style.right = 0;
+            sideBar.style.left = 0;
+        };
+        let closeSideBar = document.querySelector('.side-bar__options');
+        
+        closeSideBar.onclick = function() {
+            
+            sideBar.style.right = `${100}%`;
+            sideBar.style.left = `${-100}%`;
+        };
+
+       }; 
+
+   
+
+        // Xử lí tìm kiếm ================================================================
+       
+
+        let valueSearchInputs = document.querySelectorAll('#essay-search-box');
+        let name='';
+        let essayName='';
+        let mssv = '';
+        valueSearchInputs.forEach(function (valueSearchInput) {
+            valueSearchInput.oninput = function () {
+                if (valueSearchInput.name === 'easayName') {
+                    essayName = valueSearchInput.value;
+                } else if (valueSearchInput.name === 'name') {
+                    name = valueSearchInput.value;
+                } else if (valueSearchInput.name === 'MSSV') {
+                    mssv = valueSearchInput.value;
+                }
+                searchEssayName(essayName,name,mssv);
+            }
+        });
+
+
+
+
+
+
+        
+     </script>
+</body>
+</html>
