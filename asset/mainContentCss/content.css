@@ -20,6 +20,7 @@ svg {
   position: relative;
   margin: 0;
   padding-bottom: 64px;
+  min-height: 64.5rem;
 }
 
 .b{
