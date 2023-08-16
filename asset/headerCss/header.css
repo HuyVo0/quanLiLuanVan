@@ -88,7 +88,8 @@ ul {
 .nav__list {
     display: flex;
     align-items: center;
-    min-width: 70%;
+    justify-content: space-between;
+    min-width: 80%;
 }
 .nav__list-item a {
    
