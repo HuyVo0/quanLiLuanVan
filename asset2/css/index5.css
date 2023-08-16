@@ -13,8 +13,7 @@ body {
 }
 body::after{
     content: "";
-    background-image: linear-gradient(122deg, rgba(2, 0, 17, 0.76) 0%, rgba(23, 31, 65, 0.57) 38.53%, rgba(21, 31, 66, 0.51) 49.32%, rgba(21, 34, 74, 0.60) 58.69%, rgba(0, 10, 31, 0.80) 100%),
-    url(../images/bg2.png);
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/eefnls9gw8c51.webp);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
@@ -27,7 +26,7 @@ body::after{
 }
 
 header{
-    background-color: #368ce7;
+    background-color: #1d3557;
     border-radius: 0 0 10px 10px;
     box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
@@ -99,30 +98,31 @@ div.ND{
     margin: auto;
     color: white;
     margin-bottom: 3rem;
-    mix-blend-mode: luminosity;
+    backdrop-filter: blur(10px);
 }
 div.ND-1{
+    
     width: 31%;
-    background-color: red;
     padding: 1rem;
     font-size: 40px;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25); 
     border-radius: 15px 15px 0px 0px;
     text-align: center;
-    border-bottom: solid black 1px;
+
     position: relative;
     left: 30px;
     font-weight: bold;
+   
 }
 div.ND-2{
-    background-color: red  ;
+   
     text-align: center;
     font-size: 37px;
     border-radius: 10px;
     padding: 5rem;
     line-height: 3.5rem;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25); 
-    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
 }
 
 footer{
