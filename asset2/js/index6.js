@@ -65,8 +65,8 @@ window.onload = function(){
             <img class="lazy" data-original="${p.img}" alt="">
             <p>
                 MSSSV: ${p.MSSV} <br>
-                Ho ten: ${p.name} <br>
-                Ten luan: ${p.nameprj} <br>
+                Họ tên: ${p.name} <br>
+                Tên luận: ${p.nameprj} <br>
             </p>
         </div>
         `
@@ -84,8 +84,8 @@ window.onload = function(){
           <img class="lazy" data-original="${p.img}" alt="">
           <p>
               MSSSV: ${p.MSSV} <br>
-              Ho ten: ${p.name} <br>
-              Ten luan: ${p.nameprj} <br>
+              Họ tên: ${p.name} <br>
+              Tên luận: ${p.nameprj} <br>
           </p>
       </div>
       `

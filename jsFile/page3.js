@@ -403,7 +403,7 @@ $(document).ready(function() {
             let scrollTop = $(this).scrollTop();
             if(scrollTop === 0) {
                 $(this).find('.main-select-bar').css({
-                    'top': '8px',
+                    'top': '0px',
                     'left': '0px',
                     'right': '0px'
                 });

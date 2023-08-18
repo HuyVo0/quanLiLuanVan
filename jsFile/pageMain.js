@@ -187,7 +187,7 @@ const $ = document.querySelector.bind(document);
             // hàm ẩn hiện header phụ=====================================================================================================
             headerAper: function(){
                 let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-                if(scrollTop >= 450 ) {
+                if(scrollTop >= 280 ) {
                     headerTop.style.top = 0;
                 }
                 else {
@@ -368,6 +368,27 @@ const $ = document.querySelector.bind(document);
                         e.target.classList.add('hide');
                     }
                 };
+
+                let moblieMoreIcon = document.querySelector('.mobiile-more-icon');
+                let sideBarMobile = document.querySelector('.side-bar-mobile');
+                moblieMoreIcon.onclick = function() {
+                    if(sideBarMobile.classList.contains('hidden')) {
+                        sideBarMobile.style.right = "0";
+                        sideBarMobile.style.left = "80%";
+                        setTimeout(function(){
+                            sideBarMobile.classList.remove('hidden');
+                        },100);
+                    }
+                    else {
+                        sideBarMobile.style.right = "-20%";
+                        sideBarMobile.style.left = "100%";
+                        setTimeout(function(){
+                            sideBarMobile.classList.add('hidden');
+                        },100);
+                    }
+
+                }
+                
             },
              
 

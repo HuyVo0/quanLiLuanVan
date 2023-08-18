@@ -1,5 +1,14 @@
 @media(min-width: 1023px)
 {
+    .mobiile-more-icon{
+        display: none;
+    }
+    .fake-div{
+        display: none;
+    }
+    .side-bar-mobile {
+        display: none;
+    }
     
     .f{
         margin: 0 auto;
@@ -7,6 +16,12 @@
 }
 @media (min-width: 740px) and (max-width:1023px)    
 {
+    .comp-icon{
+        margin-right: 4px;
+    }
+    .width{
+        width: 100%;
+    }
     .row{
         width: 100%;
     }
@@ -64,9 +79,19 @@
         width: 200px;
         height: 110px;
     }
+    .mobiile-more-icon{
+        display: none;
+    }
+    .fake-div{
+        display: none;
+    }
+    .side-bar-mobile {
+        display: none;
+    }
 }
 @media (max-width: 739px)
 {
+    
     .header-background {
         padding-bottom: 4rem;
     }
@@ -192,5 +217,61 @@
     }
     .model-btn div:last-child::before{
         display: none;
+    }
+
+    .header2-navbar__search-box {
+        width: 60%;
+    }
+    .header2-navbar__search-box input{
+        width: 100%;
+    }
+    .header2-navbar__search-box input{
+        width: 40rem;
+        flex: 1;
+    }
+    .comp-icon{
+        display: none;
+    }
+    .width{
+        width: 100%;
+    }
+    .mobiile-more-icon {
+        color: var(--text-color);
+        padding: 23px;
+       width: 20%;
+       font-size: 1.8rem;
+      text-align: center;
+    }
+    .b{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fake-div{
+        width: 20%;
+        text-align: center;
+    }
+    .fake-div a{
+        color: var(--text-color);
+        font-size: 1.8rem;
+    }
+    .side-bar-mobile{
+        position: fixed;
+        top:63px;
+        right: -20%;
+        left: 100%;
+        background-color: #001d3d;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        transition: all 0.3s;
+        
+    }
+    .side-bar-mobile li {
+        padding: 1rem 0;
+        text-align: center;
+    } 
+    .side-bar-mobile li a{
+        color: var(--text-color);
+        font-size: 1.8rem;
     }
 }

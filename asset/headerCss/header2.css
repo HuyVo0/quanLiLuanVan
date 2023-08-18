@@ -62,11 +62,7 @@
 
 .header-background{
     position: relative;
-    background-image: url(../img/gradient-dark-blue-futuristic-digital-background.jpg);
-    background-repeat:no-repeat ;
-    background-position: center;
-    background-size: cover;
-    background-position: center;
+    /* background-image: url(../img/gradient-dark-blue-futuristic-digital-background.jpg); */
     width: 100%;
     padding-bottom: 8rem;
     z-index: 1;
