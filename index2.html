@@ -61,7 +61,7 @@
             </div>
             <ul class="nav__list hidden">
                 <li class="nav__list-item">
-                    <a href="">Trang Chủ</a>
+                    <a href="index.html">Trang Chủ</a>
                 </li>
                 <li class="nav__list-item">
                     <a href="">Khoa-Ban</a>
@@ -315,18 +315,18 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
             </div>
         </div>
     </main>
-
+<!-- confirm model -->
     <div class="comfirm-model-wrapper hide">
         <div class="confirm-model center-col">
             <div class="comfirm-message ">
                 <h1>Xác Nhận Xóa</h1>
             </div>
             <div  class="confirm-btn flex ">
-                <div value = "true" class="comfirm-model-btn flex space-between-center">
+                <div value = "true" class="comfirm-model-btn comfirm-model-btn-check flex space-between-center">
                     <i class="fa-solid fa-square-check"></i>
                    
                 </div>
-                <div value="false" class="comfirm-model-btn flex space-between-center">
+                <div value="false" class="comfirm-model-btn comfirm-model-btn-x flex space-between-center">
                     <i class="fa-solid fa-circle-xmark"></i>    
                   
                 </div>
@@ -611,6 +611,22 @@ s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.
             sideBar.style.left = `${-100}%`;
         };
 
+        let confirmBtn = document.querySelector('.comfirm-model-btn-check');
+        let cancelBtn = document.querySelector('.comfirm-model-btn-x');
+        let confirmModel = document.querySelector('.confirm-model');
+        confirmBtn.onmousemove = function() {
+            confirmModel.style.background="#1dbfaf";
+        };
+        cancelBtn.onmousemove = function() {
+            confirmModel.style.background="#d00000";
+        };
+        confirmBtn.onmouseout = function() {
+            confirmModel.style.background="linear-gradient(#001d3d,#003566)";
+        };
+        cancelBtn.onmouseout = function() {
+            confirmModel.style.background="linear-gradient(#001d3d,#003566)";
+        };
+        
        }; 
 
    

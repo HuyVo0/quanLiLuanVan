@@ -11,7 +11,7 @@ body{
     font-family: Quicksand;
 }
 header{
-    background-color:#1d3557;
+    background: linear-gradient(to left, #373b44, #4286f4);
     border-radius: 0 0 10px 10px;
     box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
@@ -286,13 +286,17 @@ ul.menu.mobile{
     position: fixed;
     top: 120px;
     right: 10px;
-    background-color: #368ce7;
+    background-color: #4286f4;
     width: 20%;
     height: auto;
     border-radius: 10px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     animation: slideRight 0.35s;
+}
+
+ul.menu.mobile li{
+    padding: 6px;
 }
 
 .right > div.NDprj{
@@ -384,6 +388,46 @@ ul.tab > li:hover{
 ul.tab > li > a{
     color: #003EDC;
     text-decoration: none;
+}
+
+.search{
+    width: 45%;
+    color: white;
+    margin: 0 !important;
+    border-radius : 40px;
+    padding : 10px;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 1s;
+}
+
+.search-box{
+    outline: none;
+    background: none;
+    border: none;
+    height: 20px;
+    color: white;
+    width: 0;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+}
+
+.search-icon:hover{
+    cursor: pointer;
+    color: #368ce7;
+}
+
+.search-box.show{
+    width: 100%;
+   
+}
+
+.search.show{
+    background : #2F3640;
+    
+}
+
+.search-icon.show{
+    color: #368ce7;
 }
 
 
@@ -480,6 +524,10 @@ ul.tab > li > a{
 }
 
 @media screen and (max-width: 800px) {
+    div.header-menu{
+        width: 0;
+    }
+    
     ul.menu{
         display: none;
     }    
@@ -506,6 +554,11 @@ ul.tab > li > a{
     
     div.highlights h1{
         font-size: 38px;
+    }
+
+    div.user-nav{
+        width: 60%;
+        justify-content: flex-end; 
     }
     
 }

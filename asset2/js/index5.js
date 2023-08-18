@@ -1,13 +1,3 @@
-// window.onscroll = function() {
-//     let a = document.getElementById("header")
-//     if (document.documentElement.scrollTop > 130 ) {
-//         a.style = "position: fixed; width: 99%"
-//       }
-//       else{
-//         a.style = "position: static"
-//       }
-// };
-
 window.onscroll = function() {
     let a = document.querySelector(".top")
     if (document.documentElement.scrollTop > 100 ) {
@@ -30,12 +20,33 @@ window.onload = function() {
   let i = document.querySelector(".mobile-nav")
   i.onclick = function() {
     m.classList.toggle("mobile")
+
+    window.addEventListener("mouseup", function(e){
+      if(e.target !== i)  m.classList.remove("mobile")
+  
+    })
   }
-  window.addEventListener("mouseup", function(e){
-    if(e.target !== i)  m.classList.remove("mobile")
+ 
 
-  })
+  let search_icon = document.querySelector(".search-icon")
+  let search_box = document.querySelector(".search-box")
+  let search = document.querySelector(".search")
+  search_icon.onclick = function(){
+    this.classList.toggle("show")
+    search.classList.toggle("show")
+    search_box.classList.toggle("show")
 
+    window.addEventListener("mouseup", function(e){
+      if(e.target !== search_icon && e.target !== search_box) {
+        search_icon.classList.remove("show")
+        search_box.classList.remove("show")
+        search.classList.remove("show")
+      }
+      
+    })
+  }
+  
+ 
 }
 
 function scrollToTop() {

@@ -91,6 +91,7 @@ window.onload = function(){
       `
     }
       $(".NDgd").html(a);
+      
       $("img.lazy").lazyload({
         effect: "fadeIn",
         event: "mouseover touchstart",
@@ -122,6 +123,24 @@ window.onload = function(){
     if(e.target !== i)  m.classList.remove("mobile")
 
   })
+
+  let search_icon = document.querySelector(".search-icon")
+  let search_box = document.querySelector(".search-box")
+  let search = document.querySelector(".search")
+  search_icon.onclick = function(){
+    this.classList.toggle("show")
+    search.classList.toggle("show")
+    search_box.classList.toggle("show")
+
+    window.addEventListener("mouseup", function(e){
+      if(e.target !== search_icon && e.target !== search_box) {
+        search_icon.classList.remove("show")
+        search_box.classList.remove("show")
+        search.classList.remove("show")
+      }
+      
+    })
+  }
 
 }
 

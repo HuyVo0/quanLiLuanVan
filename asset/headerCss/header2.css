@@ -16,6 +16,10 @@
     left: -39px;
   
 }
+.header2-navbar__fa-house-icon a{
+    text-decoration: none;
+    color: var(--text-color);
+}
 .header2-navbar__search-box{
     position: relative;
     background-color: #fff;

@@ -16,7 +16,6 @@ $(document).ready(() =>{
   },"input"
 )
 
-
   $("div.ND").mousemove(() =>{
     $("div.login button").css("background", "linear-gradient(to right, #6dd5ed, #2193b0)")
 
@@ -57,8 +56,8 @@ window.onload = function() {
 }
 
 function successfully_admin(){
-  var a = $('#select').find(":selected").text();
-  if(a == "Quan tri vien"){
+  var a = $('#select').find(":selected").val();
+  if(a == "ad"){
     if($("input#username").val()=="admin" && $("input#password").val()=="admin"){
       window.location.href = "index.html";
     }
@@ -70,7 +69,7 @@ function successfully_admin(){
 
 function fail(x){
   let f = `<div style="color: gold;">
-            Ten tai khoan hoac mat khau sai.
+            Tên tài khoản hoặc mật khẩu sai.
           </div>`
   x.html(f);
 }

@@ -172,6 +172,7 @@ svg {
   }
   .formm .form-submit{
     background-color: var(--seclect-color);
+    
   }
 
 
@@ -188,9 +189,10 @@ svg {
     padding: 2rem;
     width: 50rem;
     height: 20rem;
-    background-color: #fff;
     margin: 19rem auto;
     border-radius: 4px;
+    background: linear-gradient(#001d3d,#003566);
+    transition: all 0.5s;
   }
   .comfirm-message {
       flex: 1;
@@ -198,7 +200,7 @@ svg {
       justify-content: center;
       align-items: center;
       font-size: 1.6rem;
-
+    color: var(--text-color);
   }
   .confirm-btn{
    width: 100%;
@@ -217,6 +219,8 @@ svg {
     overflow: hidden;
 
   }
+ 
+
   .comfirm-model-btn::after {
     content: "Xác Nhận";
     position: absolute;
@@ -243,7 +247,7 @@ svg {
     line-height:50px ;
     font-size: 1.6rem;
     font-weight: 600;
-    background-color: red;
+    background-color: #d00000;
     border-radius: 4px;
     transition: all 0.5s;
     color: var(--text-color);
@@ -267,7 +271,7 @@ svg {
     animation: hover 0.5s  forwards;
   }
   .comfirm-model-btn:last-child:hover i{
-    color: red;
+    color: #d00000;
     animation: hover 0.5s  forwards;
   }
 

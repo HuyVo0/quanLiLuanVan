@@ -9,32 +9,25 @@
     
 }
 
-html{ 
-    min-height: 100%;
-}
-
 body {
     font-family: Quicksand; 
 }
 body::after{
     content: "";
-    
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/eefnls9gw8c51.webp);
+    background-image: linear-gradient(122deg, rgba(2, 0, 17, 0.76) 0%, rgba(23, 31, 65, 0.57) 38.53%, rgba(21, 31, 66, 0.51) 49.32%, rgba(21, 34, 74, 0.60) 58.69%, rgba(0, 10, 31, 0.80) 100%),
+    url(/asset2/images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover; 
-    position: fixed; 
+    position: fixed;
+    height: 100vh;
+    width: 100vw; 
     left: 0;
     top: 0;
     bottom: 0;
     right:0;
     z-index: -1;
 }
-.right1{
-    text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-}
-.right1 a{
-    text-shadow: none;
-}
+
 header{
     border-radius: 0 0 10px 10px;
     align-items: center;
@@ -46,12 +39,28 @@ header{
     height: 75px;
     width: 100%;
 }
-header:hover{
-    background-color: #1d3557;
-    height: 90px;
-    box-shadow: -2px 0 3px rgba(0, 0, 0, 0.8);
+
+header:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #373b44, #4286f4);
+    transition: opacity 0.5s ease-out;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+header:hover:after {
+    opacity: 1;
 }
 
+header:hover{
+    height: 100px;
+    box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
 
 
 ul.menu{
@@ -93,28 +102,16 @@ div.header-menu{
 
 div.logo{
  justify-content: center;
- width: 100%;
 }
 
 div.logo > div{
    margin: 10px;
 }
+
 div.logo img{
     width: 100%;
-}
-
-div.logo .img1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
     mix-blend-mode: multiply;
 }
-div.logo .img2{
-    width: 40%;
-    mix-blend-mode: multiply;
-}
-
 
 main{
     padding: 1rem;
@@ -133,14 +130,15 @@ div.ND{
     align-items: center;
     padding: 18px;
     animation: show 2.5s;
-   backdrop-filter: blur(5px);
 }
 
 div.ND>div{
     margin: 8px;
 }
 
-
+div.ND:hover{
+    background-color: #4286f4;
+}
 
 div.left{
     width: 50%;
@@ -167,8 +165,6 @@ input{
     width: -webkit-fill-available;
     padding: 10px;
     border-radius: 8px;
-    outline: none;
-    border: none;
 }
 
 select{ 
@@ -177,8 +173,6 @@ select{
     padding: 10px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    border: none;
-    outline: none;
 }
 
 div.login button{
@@ -186,7 +180,6 @@ div.login button{
     padding: 10px;
     border-radius: 10px;
     background: lightgray;
-    transition: all 0.3s;
 }
 
 div.login button:hover{
@@ -213,13 +206,26 @@ ul.menu.mobile{
     position: fixed;
     top: 120px;
     right: 10px;
-    background-color: #368ce7;
+    background-color: #4286f4;
     width: 20%;
     height: auto;
     border-radius: 10px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     animation: slideRight 0.35s;
+}
+
+ul.menu.mobile li{
+    padding: 6px;
+}
+
+div.right a{
+    color: burlywood;
+    text-decoration: none;
+}
+
+div.right a:hover{
+    color: red;
 }
 
 @keyframes slideRight {
@@ -285,5 +291,9 @@ ul.menu.mobile{
     div.login > div{
         width: 80%;
        
+    }
+
+    ul.menu.mobile{
+        width: 30%;
     }
 }

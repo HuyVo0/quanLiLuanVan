@@ -13,11 +13,14 @@ body {
 }
 body::after{
     content: "";
-    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../images/eefnls9gw8c51.webp);
+    background-image: linear-gradient(122deg, rgba(2, 0, 17, 0.76) 0%, rgba(23, 31, 65, 0.57) 38.53%, rgba(21, 31, 66, 0.51) 49.32%, rgba(21, 34, 74, 0.60) 58.69%, rgba(0, 10, 31, 0.80) 100%),
+    url(/asset2/images/bg2.png);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center; 
     position: fixed; 
+    height: 100vh;
+    width: 100vw;
     left: 0;
     top: 0;
     bottom: 0;
@@ -26,7 +29,7 @@ body::after{
 }
 
 header{
-    background-color: #1d3557;
+    background: linear-gradient(to left, #373b44, #4286f4);
     border-radius: 0 0 10px 10px;
     box-shadow:  0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     align-items: center;
@@ -98,31 +101,30 @@ div.ND{
     margin: auto;
     color: white;
     margin-bottom: 3rem;
-    backdrop-filter: blur(10px);
+    mix-blend-mode: luminosity;
 }
 div.ND-1{
-    
     width: 31%;
+    background-color: red;
     padding: 1rem;
     font-size: 40px;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25); 
     border-radius: 15px 15px 0px 0px;
     text-align: center;
-
+    border-bottom: solid black 1px;
     position: relative;
     left: 30px;
     font-weight: bold;
-   
 }
 div.ND-2{
-   
+    background-color: red  ;
     text-align: center;
     font-size: 37px;
     border-radius: 10px;
     padding: 5rem;
     line-height: 3.5rem;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25); 
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
 footer{
@@ -212,7 +214,7 @@ ul.menu.mobile{
     position: fixed;
     top: 120px;
     right: 10px;
-    background-color: #368ce7;
+    background-color: #4286f4;
     width: 20%;
     height: auto;
     border-radius: 10px;
@@ -221,18 +223,64 @@ ul.menu.mobile{
     animation: slideRight 0.35s;
 }
 
+ul.menu.mobile li{
+    padding: 6px;
+}
+
 div.user-nav{
     width: 30%;
     justify-content: center;
+    align-items: center;
 }
+
 div.user-nav > div{
     margin: 10px;
 }
 
 .user{
     color: white;
-    margin:auto;
 }
+
+.search{
+    width: 45%;
+    color: white;
+    margin: 0 !important;
+    border-radius : 40px;
+    padding : 10px;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 1s;
+}
+
+.search-box{
+    outline: none;
+    background: none;
+    border: none;
+    height: 20px;
+    color: white;
+    width: 0;
+    transition: all 1s cubic-bezier(0.68, -0.55, 0.265, 1.55 );
+}
+
+.search-icon:hover{
+    cursor: pointer;
+    color: #368ce7;
+}
+
+.search-box.show{
+    width: 100%;
+   
+}
+
+.search.show{
+    background : #2F3640;
+    
+}
+
+.search-icon.show{
+    color: #368ce7;
+}
+
 
 @keyframes slideDown {
     from {
@@ -302,6 +350,10 @@ div.user-nav > div{
         font-size: 25px;
     }
 
+    div.header-menu{
+        width: 0;
+    }
+
     ul.menu{
         display: none;
     }    
@@ -316,10 +368,6 @@ div.user-nav > div{
         display: block;
     }
 
-    header{
-        justify-content: space-between;
-    }
-
     div.logo >div{
         width: 49%;
     }
@@ -332,6 +380,11 @@ div.user-nav > div{
         margin-top: 145px;
     }
    
+    div.user-nav{
+        width: 60%;
+        justify-content: flex-end;
+        
+    }
 }
 
 @media screen and (max-width: 600px) {
