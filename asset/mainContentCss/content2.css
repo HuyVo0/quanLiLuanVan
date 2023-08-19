@@ -221,6 +221,14 @@ body{
     margin-bottom: 2rem;
     
 }
+.essays-wrapper::-webkit-scrollbar{
+  width: 1px;
+  background-color: transparent;
+}
+.essays-wrapper::-webkit-scrollbar-thumb{
+  border-radius: 1px;
+  background-color: transparent;
+}
 .slide {
     width: 100%;
     

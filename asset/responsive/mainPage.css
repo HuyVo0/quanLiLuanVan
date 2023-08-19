@@ -63,6 +63,14 @@
     .essays-wrapper{
         overflow-x: scroll;
     }
+    .essays-wrapper::-webkit-scrollbar{
+        width: 1px;
+        background-color: transparent;
+    }
+    .essays-wrapper::-webkit-scrollbar-thumb{
+        border-radius: 1px;
+        background-color: transparent;
+    }
     .newest::after{
         left: 0;
         top: 0;

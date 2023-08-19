@@ -59,7 +59,7 @@ function successfully_admin(){
   var a = $('#select').find(":selected").val();
   if(a == "ad"){
     if($("input#username").val()=="admin" && $("input#password").val()=="admin"){
-      window.location.href = "index.html";
+      window.location.href = "Admin.html";
     }
     else{
         fail($("span#fail"))    

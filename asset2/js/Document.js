@@ -101,7 +101,7 @@ window.onload = function(){
 
 
     $("div.download").click(() => {
-      window.location.href ="index3.html"
+      window.location.href ="Login.html"
     })
   
   })

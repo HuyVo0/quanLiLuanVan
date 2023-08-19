@@ -1,4 +1,4 @@
-* {
+    * {
     margin:0;
     padding:0;  
 }
@@ -6,10 +6,12 @@
     display: flex;
     
 }
+
 body{
     background-color: #f2f2f2;
     font-family: Quicksand;
 }
+
 header{
     background: linear-gradient(to left, #373b44, #4286f4);
     border-radius: 0 0 10px 10px;
@@ -36,7 +38,7 @@ ul.menu li{
 }
 
 ul.menu li a{
-    text-decoration: 0;
+    text-decoration: none;
     color: white;
     font-size: 1rem;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25); 
@@ -98,6 +100,9 @@ main{
     background-color: white;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     border-radius: 15px;
+    height: 500px;
+    padding: 10px;
+    overflow: auto;
 }
 
 .right{
@@ -234,7 +239,6 @@ header.slidedown {
     height: 70px;
     position: fixed;
     animation: slideDown 0.35s;
-    opacity: 0.95;
   }
 
 header.slidedown img {
@@ -310,10 +314,24 @@ ul.menu.mobile li{
     margin: auto;
 }
 
-.left div.ND{
-    height: 500px;
-    padding: 10px;
-    overflow: auto;
+.left div.ND::-webkit-scrollbar{
+    width: 5px;
+    height: 7px; 
+}
+
+.left div.ND::-webkit-scrollbar-thumb{
+    border-radius: 3px;
+    background-color: #ccc;
+}
+
+.left div.ND::-webkit-scrollbar-button{
+    background-color: none;
+    width: 7px;
+    height: 7px;
+}
+
+.left div.ND::-webkit-scrollbar-thumb:hover{
+    background-color: #003394;
 }
 
 .left div.NDleft{
@@ -520,6 +538,11 @@ ul.tab > li > a{
     footer div.logo_footer{
         width: 60%;
         margin: 7px;
+    }
+
+    .left div.NDleft{
+        overflow: hidden;
+        height: 360px;
     }
 }
 
